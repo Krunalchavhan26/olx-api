@@ -26,7 +26,7 @@ func MustLoad() Config {
 	}
 
 	dbUrl := os.Getenv("DATABASE_URL")
-	if env == "" {
+	if dbUrl == "" {
 		panic("DATABASE_URL is required.")
 	}
 
