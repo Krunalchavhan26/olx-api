@@ -8,3 +8,9 @@ build:
 
 run: build
 	@./bin/api
+
+migrate-up:
+	@go run ${CMD_DIR}/migrate up
+
+migrate-down:
+	@go run ${CMD_DIR}/migrate down
